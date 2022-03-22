@@ -39,8 +39,6 @@ func main(){
 		for _, i := range *phrase{
 			if r.MatchString(string(i)){
 				s += string(i)
-			} else{
-				continue
 			}
 		}
 		isPalindrome(s)
