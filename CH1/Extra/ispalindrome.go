@@ -29,9 +29,7 @@ func main(){
 	}
 	var s string 
 	if *phrase != ""{
-
 		r, err := regexp.Compile(`[A-Za-z]`)
-		
 		if err != nil {
 			log.Println("Error, cannot regex compile: %v", err)
 			os.Exit(1)
@@ -56,7 +54,6 @@ func isPalindrome(s string){
 			isPalindrome(s)
 		}	
 	} else{
-		// return false 
 		fmt.Printf("It's NOT PALINDROME\n")
 	}
 }
